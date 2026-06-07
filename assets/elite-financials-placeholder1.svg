@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Elite Financials image placeholder</title>
+  <desc id="desc">Abstract blue, white, and gold financial planning placeholder.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061f46"/>
+      <stop offset=".58" stop-color="#0b3f8a"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#b8872b"/>
+      <stop offset="1" stop-color="#f1d27a"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="1200" fill="url(#bg)"/>
+  <circle cx="730" cy="260" r="170" fill="#ffffff" opacity=".12"/>
+  <circle cx="220" cy="930" r="260" fill="#ffffff" opacity=".1"/>
+  <path d="M150 830h660v82H150zm0-170h510v82H150zm0-170h360v82H150z" fill="#ffffff" opacity=".9"/>
+  <path d="M150 912 810 490v118L308 912z" fill="url(#gold)" opacity=".95"/>
+  <rect x="150" y="270" width="260" height="64" rx="12" fill="#f1d27a"/>
+  <rect x="150" y="358" width="500" height="26" rx="13" fill="#ffffff" opacity=".88"/>
+  <rect x="150" y="410" width="420" height="26" rx="13" fill="#ffffff" opacity=".72"/>
+  <text x="150" y="1040" fill="#ffffff" font-family="Arial, sans-serif" font-size="62" font-weight="700">Elite Financials</text>
+</svg>
