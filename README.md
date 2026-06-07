@@ -1,6 +1,6 @@
-# VeeLegacy Financial Strategy Website
+# Elite Financials Financial Strategy Website
 
-This is a premium static website for VeeLegacy Financial Services, positioned around strategic wealth planning, investment planning, financial protection, retirement planning, estate planning, and business financial strategies.
+This is a premium static website for Elite Financials, positioned around strategic wealth planning, investment planning, financial protection, retirement planning, estate planning, and business financial strategies.
 
 ## Pages
 - Home
@@ -8,7 +8,7 @@ This is a premium static website for VeeLegacy Financial Services, positioned ar
 - Services
 - Travel Insurance Quote
 - Resources
-- Financial Planner in Whitby local SEO page
+- Financial Planner in Calgary local SEO page
 - Contact / Consultation
 
 ## Search Setup
@@ -17,7 +17,7 @@ See `SEO-SETUP.md` for Google Search Console, Bing Webmaster, Google Analytics 4
 
 ## SEO Planning
 
-See `SEO-CONTENT-RECOMMENDATIONS.md` for recommended future landing pages and blog-style guides targeting Ontario, Whitby, RESP, TFSA, RRSP, estate planning, life insurance, newcomers, and family financial planning search intent.
+See `SEO-CONTENT-RECOMMENDATIONS.md` for recommended future landing pages and blog-style guides targeting Alberta, Calgary, RESP, TFSA, RRSP, estate planning, life insurance, newcomers, and family financial planning search intent.
 
 ## Travel Insurance Quote Page
 The quote page collects client details. To allow a client to receive an instant quote, you need either:
@@ -32,14 +32,14 @@ Deploy on Netlify for easy form submission collection.
 
 ## Replace images
 Replace:
-- `assets/logo.png`
-- `assets/profile.jpg`
+- `assets/elite-financials-logo.svg`
+- `assets/elite-financials-placeholder.svg`
 
 ## GitHub
 ```bash
 git init
 git add .
-git commit -m "Initial VeeLegacy professional website"
+git commit -m "Initial Elite Financials professional website"
 git branch -M main
 git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
 git push -u origin main

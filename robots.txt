@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://veelegacy.ca/sitemap.xml
+Sitemap: https://elitefinancials.ca/sitemap.xml
