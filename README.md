@@ -32,8 +32,8 @@ Deploy on Netlify for easy form submission collection.
 
 ## Replace images
 Replace:
-- `assets/elite-financials-logo.svg`
-- `assets/elite-financials-placeholder.svg`
+- `assets/elite-financials-logo.jpg`
+- `assets/elite-financials-profile.jpg`
 
 ## GitHub
 ```bash
