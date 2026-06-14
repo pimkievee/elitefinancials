@@ -1,23 +1,18 @@
-# Elite Financials Financial Strategy Website
+# Elite Financials Financial Planning Website
 
-This is a premium static website for Elite Financials, positioned around strategic wealth planning, investment planning, financial protection, retirement planning, estate planning, and business financial strategies.
+This is a static website for Elite Financials, positioned around approachable financial planning, family protection, life insurance, retirement planning, education savings, business protection, and travel insurance support.
 
 ## Pages
 - Home
 - About
 - Services
 - Travel Insurance Quote
-- Resources
 - Financial Planner in Calgary local SEO page
 - Contact / Consultation
 
 ## Search Setup
 
 See `SEO-SETUP.md` for Google Search Console, Bing Webmaster, Google Analytics 4, and Google Business Profile setup steps.
-
-## SEO Planning
-
-See `SEO-CONTENT-RECOMMENDATIONS.md` for recommended future landing pages and blog-style guides targeting Alberta, Calgary, RESP, TFSA, RRSP, estate planning, life insurance, newcomers, and family financial planning search intent.
 
 ## Travel Insurance Quote Page
 The quote page collects client details. To allow a client to receive an instant quote, you need either:

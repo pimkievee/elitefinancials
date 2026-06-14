@@ -26,5 +26,5 @@ Code placeholders are ready for indexing and analytics. Replace the placeholder 
 
 1. Confirm business name, service areas, phone number, website URL, and business category.
 2. Link the profile to `https://elitefinancials.ca/`.
-3. Add services that match the site: financial planning, insurance planning, retirement planning, estate planning, RESP, TFSA, RRSP, FHSA, and business owner planning.
-4. Add posts that link to the Resources hub and the Calgary landing page.
+3. Add services that match the site: financial planning, insurance planning, retirement planning, family protection, RESP, TFSA, RRSP, FHSA, and business owner planning.
+4. Add posts that link to the services, contact, travel insurance, and Calgary landing pages.
