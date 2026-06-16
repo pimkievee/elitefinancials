@@ -3,6 +3,6 @@
   <desc id="desc">Blue and gold Elite Financials monogram placeholder.</desc>
   <rect width="512" height="512" rx="92" fill="#ffffff"/>
   <path d="M80 376V136h352v66H154v54h224v60H154v60h278v66H80z" fill="#0b2f6b"/>
-  <path d="M80 136h352v36H80zM80 256h298v34H80zM80 376h352v36H80z" fill="#d6a84f" opacity=".95"/>
-  <path d="M374 98l32 62h-64z" fill="#d6a84f"/>
+  <path d="M80 136h352v36H80zM80 256h298v34H80zM80 376h352v36H80z" fill="#D4AF37" opacity=".95"/>
+  <path d="M374 98l32 62h-64z" fill="#D4AF37"/>
 </svg>
