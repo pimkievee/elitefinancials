@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://elitefinancials.ca/sitemap.xml
+Sitemap: https://elitfinancialpartners.com/sitemap.xml

@@ -7,7 +7,7 @@ This is a static website for Elite Financials, positioned around approachable fi
 - About
 - Services
 - Travel Insurance Quote
-- Financial Planner in Calgary local SEO page
+- Financial Planning Across Canada local SEO page
 - Contact / Consultation
 
 ## Search Setup
