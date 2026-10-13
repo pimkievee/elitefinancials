@@ -20,43 +20,81 @@
 <link rel="stylesheet" href="/styles.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://elitglobalpartners.com/medical-professionals/#webpage","url":"https://elitglobalpartners.com/medical-professionals/","name":"Helping Medical Professionals Transition to Canada","description":"Settlement, financial, accounting and insurance support for internationally trained medical professionals in Canada.","isPartOf":{"@id":"https://elitglobalpartners.com/#website"},"inLanguage":"en-CA"}</script>
 <style>
-.medical-page{--mp-navy:#111b58;--mp-blue:#1a237e;--mp-gold:#d4af37;color:#26324d}
-.medical-page .mp-container{max-width:1180px;width:calc(100% - 44px);margin:0 auto}
-.medical-page .mp-nav{background:#101a51;position:sticky;top:0;z-index:40;border-bottom:1px solid rgba(212,175,55,.45)}
-.medical-page .mp-nav-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:14px 0}
-.medical-page .mp-brand{display:flex;align-items:center;gap:12px;color:white;font-weight:800;white-space:nowrap}.medical-page .mp-brand img{height:44px;width:44px;object-fit:contain}
-.medical-page .mp-links{display:flex;align-items:center;flex-wrap:wrap;gap:15px;font-size:12px;font-weight:700;color:white}
-.medical-page .mp-links a:hover,.medical-page .mp-links a:focus-visible{color:#f2d675}
-.medical-page .mp-links .mp-contact{background:var(--mp-gold);color:#111b58;padding:9px 13px;border-radius:7px}
-.medical-page .mp-hero{padding:92px 0 95px;color:white;background:radial-gradient(circle at 88% 28%,rgba(212,175,55,.21),transparent 35%),linear-gradient(125deg,#0d154f,#27368f)}
-.medical-page .mp-eyebrow{font-weight:800;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#edcd6a;margin-bottom:16px}
-.medical-page .mp-hero h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(38px,5.2vw,64px);line-height:1.13;max-width:920px;color:white;margin:0 0 24px}
-.medical-page .mp-hero .mp-lead{font-size:clamp(16px,2vw,20px);max-width:760px;color:#e9ecfc;line-height:1.8;margin-bottom:30px}
-.medical-page .mp-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:25px}
-.medical-page .mp-button{display:inline-flex;justify-content:center;align-items:center;min-height:48px;padding:13px 24px;border-radius:8px;font-weight:800;background:#d4af37;color:#101a51}
-.medical-page .mp-button.mp-outline{background:transparent;color:inherit;border:1.5px solid currentColor}
-.medical-page .mp-button:hover{transform:translateY(-2px)}
-.medical-page .mp-section{padding:78px 0;scroll-margin-top:90px}
-.medical-page .mp-alt{background:#f5f7fd}
-.medical-page h2{font-family:"Playfair Display",Georgia,serif;color:#162260;font-size:clamp(29px,3.5vw,43px);line-height:1.2;margin:0 0 17px}
-.medical-page .mp-intro{font-size:17px;max-width:740px;margin:0 0 27px}
-.medical-page .mp-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:19px;margin:25px 0}
-.medical-page .mp-card{background:white;border:1px solid #dfe3f2;border-radius:14px;padding:28px 24px;box-shadow:0 8px 28px rgba(16,26,81,.06)}
-.medical-page .mp-card h3{color:#14216a;font-size:19px;margin:0 0 8px}
-.medical-page .mp-card p{margin:0;color:#536078}
-.medical-page .mp-card .mp-number{color:#ae8725;font-size:12px;font-weight:900;letter-spacing:.13em;margin-bottom:12px}
-.medical-page .mp-band{background:#122062;color:white;padding:65px 0}.medical-page .mp-band h2{color:white}.medical-page .mp-band p{color:#ebeeff}
-.medical-page .mp-band .mp-card{background:#fff;color:#26324d}
-.medical-page .mp-band .mp-card h3{color:#14216a}
-.medical-page .mp-band .mp-card p{color:#45536c;opacity:1}
-.medical-page .mp-pills{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0 28px}
-.medical-page .mp-pill{border:1px solid #ccd2eb;border-radius:999px;padding:9px 17px;color:#152365;font-weight:700;background:white}
-.medical-page .mp-band .mp-pill{color:white;background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.3)}
-.medical-page .mp-foot{background:#0d154f;padding:32px 0;color:#e8eaf5}
-.medical-page .mp-foot-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-.medical-page .mp-foot a{color:#f1d174}
-@media(max-width:1050px){.medical-page .mp-nav-inner{align-items:flex-start;flex-direction:column}.medical-page .mp-links{gap:12px}}
-@media(max-width:600px){.medical-page .mp-container{width:calc(100% - 30px)}.medical-page .mp-nav{position:relative}.medical-page .mp-hero{padding:60px 0}.medical-page .mp-section{padding:54px 0}.medical-page .mp-brand{font-size:14px}.medical-page .mp-links{font-size:12px;line-height:1.5}.medical-page .mp-cards{grid-template-columns:1fr}}
+
+/* Medical professionals page: refined editorial design */
+.medical-page{--mp-navy:#121d43;--mp-blue:#24396b;--mp-gold:#c6a45c;--mp-ink:#26324b;--mp-muted:#627085;color:var(--mp-ink);background:#fff;font-family:"Inter",Arial,sans-serif;line-height:1.65}
+.medical-page .mp-container{width:min(1140px,calc(100% - 64px));max-width:none;margin-inline:auto}
+.medical-page .mp-nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e9edf2;box-shadow:0 3px 22px rgba(15,30,60,.045)}
+.medical-page .mp-nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:83px;padding:12px 0}
+.medical-page .mp-brand{display:inline-flex;align-items:center;gap:11px;white-space:nowrap;font-size:15px;font-weight:800;letter-spacing:-.025em;color:var(--mp-navy)}
+.medical-page .mp-brand img{width:42px;height:42px;object-fit:contain;border-radius:8px}
+.medical-page .mp-links{display:flex;align-items:center;justify-content:flex-end;gap:clamp(9px,1.3vw,18px);font-size:11px;font-weight:700;color:#41506a;flex-wrap:nowrap}
+.medical-page .mp-links a{white-space:nowrap;transition:color .2s}
+.medical-page .mp-links a:hover,.medical-page .mp-links a:focus-visible{color:#aa8236}
+.medical-page .mp-links .mp-contact{background:var(--mp-navy);color:white;border-radius:5px;padding:11px 17px}
+.medical-page .mp-hero{padding:0;background:#f8f9fc;color:var(--mp-navy);position:relative;overflow:hidden}
+.medical-page .mp-hero:before{content:"";position:absolute;right:-200px;top:-270px;width:800px;height:800px;border-radius:50%;background:radial-gradient(circle,#e8edf8 0%,rgba(232,237,248,0) 69%);pointer-events:none}
+.medical-page .mp-hero .mp-container{display:grid;grid-template-columns:minmax(0,1fr) minmax(270px,.78fr);gap:68px;align-items:center;min-height:570px;padding-block:88px;position:relative}
+.medical-page .mp-hero-copy{max-width:720px}
+.medical-page .mp-eyebrow{color:#a07a39;text-transform:uppercase;font-size:11px;letter-spacing:.19em;font-weight:800;margin:0 0 18px}
+.medical-page .mp-hero h1{font-family:"Playfair Display",Georgia,serif;color:var(--mp-navy);font-size:clamp(38px,4.1vw,59px);line-height:1.14;letter-spacing:-.03em;margin:0 0 22px;max-width:790px}
+.medical-page .mp-hero .mp-lead{font-size:17px;line-height:1.85;color:#5a677c;max-width:610px;margin-bottom:23px}
+.medical-page .mp-hero-art{background:#15234d;min-height:394px;border-radius:5px;position:relative;overflow:hidden;box-shadow:0 26px 55px rgba(23,38,76,.16);display:flex;flex-direction:column;justify-content:flex-end;padding:40px}
+.medical-page .mp-hero-art:before{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(230,202,143,.3);border-radius:50%;top:-85px;right:-110px;box-shadow:0 0 0 50px rgba(230,202,143,.06),0 0 0 105px rgba(230,202,143,.035)}
+.medical-page .mp-hero-art:after{content:"";position:absolute;left:40px;top:42px;width:56px;height:3px;background:#d8b970}
+.medical-page .mp-hero-art strong{font-family:"Playfair Display",Georgia,serif;font-weight:600;color:#fff;font-size:clamp(27px,2.5vw,37px);line-height:1.23;position:relative;max-width:315px}
+.medical-page .mp-hero-art span{color:#d8b970;position:relative;text-transform:uppercase;letter-spacing:.2em;font-weight:700;font-size:10px;margin-bottom:18px}
+.medical-page .mp-actions{display:flex;flex-wrap:wrap;gap:12px;margin:25px 0 0}
+.medical-page .mp-button{display:inline-flex;align-items:center;justify-content:center;min-height:49px;padding:13px 22px;border:1px solid var(--mp-navy);border-radius:5px;background:var(--mp-navy);color:#fff;font-size:13px;font-weight:800;line-height:1.3;box-shadow:none;transition:background .2s,transform .2s}
+.medical-page .mp-button:hover{transform:translateY(-2px);background:#2d4477;color:#fff}
+.medical-page .mp-button.mp-outline{background:transparent;color:var(--mp-navy)}
+.medical-page .mp-button.mp-outline:hover{background:#e6ebf5;color:var(--mp-navy)}
+.medical-page .mp-section{padding:92px 0;scroll-margin-top:100px}
+.medical-page .mp-alt{background:#f7f8fb}
+.medical-page h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(31px,3.4vw,44px);font-weight:600;line-height:1.22;letter-spacing:-.023em;color:var(--mp-navy);margin:0 0 18px}
+.medical-page .mp-intro{font-size:16px;color:#627085;line-height:1.8;max-width:580px;margin:0 0 25px}
+.medical-page .mp-section>.mp-container>.mp-eyebrow{margin-bottom:12px}
+.medical-page .mp-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:28px 0 29px}
+.medical-page .mp-card{background:#fff;border:1px solid #e3e7ee;border-radius:6px;box-shadow:none;padding:27px 29px;transition:box-shadow .2s,border-color .2s}
+.medical-page .mp-card:hover{box-shadow:0 10px 29px rgba(20,35,75,.07);border-color:#d3d9e4}
+.medical-page .mp-card h3{font-size:18px;line-height:1.35;color:var(--mp-navy);margin:0 0 9px;font-weight:800}
+.medical-page .mp-card p{font-size:14px;color:#647187;line-height:1.7;margin:0}
+.medical-page .mp-card .mp-number{font-size:10px;color:#a88241;font-weight:800;letter-spacing:.15em;margin-bottom:11px}
+.medical-page #settle .mp-container,.medical-page #financial .mp-container,.medical-page #accounting .mp-container{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);column-gap:70px;align-items:start}
+.medical-page #settle .mp-eyebrow,.medical-page #financial .mp-eyebrow,.medical-page #accounting .mp-eyebrow{grid-column:1;grid-row:1}
+.medical-page #settle h2,.medical-page #financial h2,.medical-page #accounting h2{grid-column:1;grid-row:2}
+.medical-page #settle .mp-intro,.medical-page #financial .mp-intro,.medical-page #accounting .mp-intro{grid-column:1;grid-row:3}
+.medical-page #settle .mp-cards,.medical-page #financial .mp-cards,.medical-page #accounting .mp-cards{grid-column:2;grid-row:1 / span 5;margin:0}
+.medical-page #settle .mp-button,.medical-page #financial .mp-button,.medical-page #accounting .mp-button{grid-column:1;grid-row:4;justify-self:start}
+.medical-page #accounting .mp-cards{grid-template-columns:1fr}
+.medical-page #accounting .mp-card{padding:20px 27px}
+.medical-page .mp-band{background:var(--mp-navy);color:#fff;padding:84px 0}
+.medical-page .mp-band h2{color:#fff}
+.medical-page .mp-band p{color:#d7deed}
+.medical-page .mp-band .mp-eyebrow{color:#d6b975}
+.medical-page .mp-band .mp-button{background:#d4b66f;border-color:#d4b66f;color:#142047}
+.medical-page .mp-band .mp-button.mp-outline{background:transparent;color:#fff;border-color:#8796b9}
+.medical-page .mp-band .mp-button:hover{background:#efd79c;color:#142047}
+.medical-page .mp-pills{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0 28px}
+.medical-page .mp-pill{display:inline-flex;padding:12px 20px;border-radius:5px;border:1px solid #66779c;background:rgba(255,255,255,.06);color:#fff;font-size:14px;font-weight:700}
+.medical-page #business .mp-container,.medical-page #testimonials .mp-container{max-width:830px;text-align:center}
+.medical-page #business .mp-intro,.medical-page #testimonials .mp-intro{margin:0 auto 26px}
+.medical-page #testimonials .mp-button{margin-top:14px}
+.medical-page #get-started .mp-cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:36px 0}
+.medical-page #get-started .mp-card{border:1px solid rgba(255,255,255,.1);background:#fff;padding:30px;min-height:178px}
+.medical-page #get-started .mp-card h3{color:#16234b}
+.medical-page #get-started .mp-card p{color:#536078;opacity:1}
+.medical-page #quotes .mp-container,#get-started .mp-container{max-width:1000px}
+.medical-page #contact .mp-container{max-width:790px;text-align:center}
+.medical-page #contact .mp-intro{margin-inline:auto}
+.medical-page #contact .mp-actions{justify-content:center}
+.medical-page .mp-foot{background:#101a39;padding:30px 0;color:#cdd4e3;font-size:13px}
+.medical-page .mp-foot-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px}
+.medical-page .mp-foot a{color:#e6c580}
+@media(max-width:1050px){.medical-page .mp-nav-inner{flex-wrap:wrap}.medical-page .mp-links{flex-wrap:wrap;justify-content:flex-start;gap:14px}.medical-page .mp-hero .mp-container{gap:35px}.medical-page #settle .mp-container,.medical-page #financial .mp-container,.medical-page #accounting .mp-container{column-gap:35px}}
+@media(max-width:760px){.medical-page .mp-container{width:calc(100% - 36px)}.medical-page .mp-nav{position:relative}.medical-page .mp-nav-inner{padding:14px 0;gap:12px}.medical-page .mp-links{gap:12px 16px;font-size:11px}.medical-page .mp-hero .mp-container{display:block;min-height:0;padding-block:65px}.medical-page .mp-hero-art{min-height:230px;margin-top:38px}.medical-page .mp-section{padding:62px 0}.medical-page #settle .mp-container,.medical-page #financial .mp-container,.medical-page #accounting .mp-container{display:block}.medical-page #settle .mp-cards,.medical-page #financial .mp-cards,.medical-page #accounting .mp-cards{margin:25px 0}.medical-page .mp-cards,.medical-page #get-started .mp-cards{grid-template-columns:1fr}.medical-page .mp-band{padding:65px 0}.medical-page #get-started .mp-card{min-height:0}.medical-page .mp-hero h1{font-size:clamp(34px,8vw,46px)}}
+@media(prefers-reduced-motion:reduce){.medical-page *{transition:none!important}}
+
 </style>
 </head>
 <body class="medical-page">
@@ -65,7 +103,7 @@
 <div class="mp-links"><a href="/medical-professionals/">Home</a><a href="#settle">Settle in Canada</a><a href="#financial">Financial Services</a><a href="#accounting">Accounting</a><a href="#business">Business Opportunities</a><a href="#testimonials">Testimonials</a><a class="mp-contact" href="#contact">Contact</a></div>
 </div></nav>
 <main>
-<section class="mp-hero" id="home"><div class="mp-container"><p class="mp-eyebrow">Global planning for real life</p><h1>Helping Medical Professionals Transition Smoothly to Canada</h1><p class="mp-lead">Practical support for internationally trained physicians and medical professionals as they establish their careers, businesses, and financial lives in Canada.</p><div class="mp-actions"><a class="mp-button" href="#get-started">Get Started</a><a class="mp-button mp-outline" href="#quotes">Get a Quote</a></div></div></section>
+<section class="mp-hero" id="home"><div class="mp-container"><div class="mp-hero-copy"><p class="mp-eyebrow">Global planning for real life</p><h1>Helping Medical Professionals Transition Smoothly to Canada</h1><p class="mp-lead">Practical support for internationally trained physicians and medical professionals as they establish their careers, businesses, and financial lives in Canada.</p><div class="mp-actions"><a class="mp-button" href="#get-started">Get Started</a><a class="mp-button mp-outline" href="#quotes">Get a Quote</a></div></div><div class="mp-hero-art" aria-label="Supporting your move, career and financial future"><span>For medical professionals</span><strong>One clear path for your next chapter in Canada.</strong></div></div></section>
 <section class="mp-section" id="settle"><div class="mp-container"><p class="mp-eyebrow">01 · Settle in Canada</p><h2>Making Your Transition Easier</h2><p class="mp-intro">Everything you need to get established. Explore practical support for your move and your next professional chapter.</p><div class="mp-cards"><div class="mp-card"><p class="mp-number">SETTLEMENT</p><h3>Housing</h3><p>Guidance on navigating housing options as you get settled.</p></div><div class="mp-card"><p class="mp-number">PROTECTION</p><h3>Auto Insurance</h3><p>Explore coverage options as you prepare to drive in Canada.</p></div><div class="mp-card"><p class="mp-number">PRACTICE</p><h3>Clinic Setup</h3><p>Explore the practical steps and professional support involved in establishing a clinic.</p></div><div class="mp-card"><p class="mp-number">BUSINESS</p><h3>Incorporation</h3><p>Understand your options and connect with appropriate professional guidance.</p></div></div><a class="mp-button" href="/contact/">Learn More</a></div></section>
 <section class="mp-section mp-alt" id="financial"><div class="mp-container"><p class="mp-eyebrow">02 · Financial Services</p><h2>Plan. Protect. Build.</h2><p class="mp-intro">Financial strategies designed around your career and goals.</p><div class="mp-cards"><div class="mp-card"><h3>Financial Planning</h3><p>Bring your income, priorities and long-term goals into one practical plan.</p></div><div class="mp-card"><h3>Investment Strategies</h3><p>Explore strategies aligned with your goals and risk tolerance.</p></div><div class="mp-card"><h3>Insurance Planning</h3><p>Understand protection options for yourself, your family and your business.</p></div><div class="mp-card"><h3>Retirement Planning</h3><p>Plan for financial security throughout your career and beyond.</p></div></div><a class="mp-button" href="/services/">Explore Financial Services</a></div></section>
 <section class="mp-section" id="accounting"><div class="mp-container"><p class="mp-eyebrow">03 · Accounting</p><h2>Keep Your Finances Organized</h2><p class="mp-intro">Professional accounting support for your personal and professional finances.</p><div class="mp-cards"><div class="mp-card"><h3>Tax Planning</h3><p>Explore tax considerations for your professional and personal finances.</p></div><div class="mp-card"><h3>Corporate Accounting</h3><p>Understand accounting requirements for an incorporated practice or business.</p></div><div class="mp-card"><h3>Bookkeeping</h3><p>Keep records organized to support informed financial decisions.</p></div></div><a class="mp-button" href="/contact/">Learn More</a></div></section>
