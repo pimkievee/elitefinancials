@@ -1,6 +1,6 @@
-# Elite Financials Financial Planning Website
+# Elite Global Partners Financial Planning Website
 
-This is a static website for Elite Financials, positioned around approachable financial planning, family protection, life insurance, retirement planning, education savings, business protection, and travel insurance support.
+This is a static website for Elite Global Partners, positioned around approachable financial planning, family protection, life insurance, retirement planning, education savings, business protection, and travel insurance support.
 
 ## Pages
 - Home
@@ -34,7 +34,7 @@ Replace:
 ```bash
 git init
 git add .
-git commit -m "Initial Elite Financials professional website"
+git commit -m "Initial Elite Global Partners professional website"
 git branch -M main
 git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
 git push -u origin main
