@@ -217,3 +217,28 @@
  .elite-medical-refined .elite-med-approved-accounting .elite-med-accounting-list article{min-height:0;padding:18px}
  .elite-medical-refined .elite-med-business-panel{padding:26px 23px}
 }
+
+/* Replace repetitive medical photography with an understated stethoscope motif. */
+.elite-medical-refined .elite-med-stethoscope{
+  width:100%;min-height:340px;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:8px;
+  position:relative;isolation:isolate;overflow:hidden;border-radius:5px;
+  background:linear-gradient(125deg,#101a45,#24366d);
+  box-shadow:0 12px 28px rgba(13,21,79,.08);
+}
+.elite-medical-refined .elite-med-stethoscope::before{
+  content:"";position:absolute;width:360px;height:360px;border-radius:50%;
+  background:radial-gradient(circle,rgba(230,193,112,.08),transparent 68%);pointer-events:none;
+}
+.elite-medical-refined .elite-med-stethoscope svg{
+  position:relative;display:block;width:min(69%,235px);height:auto;max-height:250px;
+  opacity:.64;filter:blur(.45px) drop-shadow(0 6px 14px rgba(15,21,52,.2));
+}
+.elite-medical-refined .elite-med-stethoscope>span{
+  display:block;position:relative;color:#e6d3a0;font-size:10px;
+  font-weight:800;letter-spacing:.15em;text-align:center;padding:0 15px;
+}
+@media(max-width:750px){
+ .elite-medical-refined .elite-med-stethoscope{min-height:250px}
+ .elite-medical-refined .elite-med-stethoscope svg{max-height:170px}
+}

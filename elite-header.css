@@ -1,0 +1,80 @@
+
+/* ELITE Global Partners - header refinements, 2026-10-24.
+   Preserve branded shield, remove square photograph backing, distribute desktop navigation. */
+.elite-refresh .nav{
+ width:min(1320px,calc(100% - 56px));
+ min-height:92px;
+ padding:10px 0;
+ column-gap:20px;
+}
+.elite-refresh .brand{flex:0 0 auto;display:inline-flex;gap:12px;align-items:center;white-space:nowrap;color:#0d154f;min-width:0}
+.elite-refresh .brand img{
+ display:block;width:62px;height:72px;
+ object-fit:contain;
+ flex-shrink:0;background:transparent!important;border:0!important;
+ box-shadow:none!important;border-radius:0!important;
+}
+.elite-refresh .brand span{font-size:clamp(17px,1.46vw,20px);line-height:1.18;letter-spacing:-.035em;font-weight:800}
+.elite-refresh .nav-links{
+ flex:1;display:flex;align-items:center;justify-content:space-around;
+ gap:clamp(12px,1.5vw,27px);margin-left:clamp(18px,3vw,55px);
+ font-size:clamp(13px,1.08vw,15px);font-weight:750;white-space:nowrap;
+}
+.elite-refresh .nav-links>a{flex-shrink:0}
+.elite-refresh .nav-links .nav-cta{
+ min-height:43px;padding:11px 18px;font-size:13px;
+}
+.elite-refresh .elite-footer-brand img{
+ display:block;object-fit:contain;width:42px;height:49px;
+ border:0;border-radius:0;background:transparent;
+}
+.elite-classic-about .site-header .brand{color:#fff}
+.elite-classic-about .site-header .nav-links a:not(.nav-cta){color:#fff}
+@media(max-width:1020px){
+ .elite-refresh .nav{width:calc(100% - 35px);min-height:76px;gap:13px;padding:7px 0}
+ .elite-refresh .brand{gap:9px}
+ .elite-refresh .brand img{width:45px;height:54px}
+ .elite-refresh .brand span{font-size:clamp(13px,2.4vw,17px)}
+ .elite-refresh .nav-links{
+   display:none;flex:none;margin-left:0;
+   flex-direction:column;align-items:stretch;white-space:normal;
+   font-size:14px;gap:5px;justify-content:flex-start
+ }
+ .elite-refresh .nav-links.open{display:flex}
+ .elite-refresh .nav-links a{white-space:normal}
+ .elite-refresh .nav-links .nav-cta{font-size:13px}
+ .elite-classic-about .site-header .nav-links a:not(.nav-cta){color:#1a237e}
+}
+@media(max-width:620px){
+ .elite-refresh .mobile-header-cta{display:none}
+ .elite-refresh .nav{width:calc(100% - 30px);gap:9px}
+ .elite-refresh .brand img{width:44px;height:53px}
+ .elite-refresh .brand span{font-size:clamp(13px,3.8vw,16px)}
+ .elite-refresh .menu-toggle{margin-left:auto}
+}
+@media(min-width:1021px) and (max-width:1160px){
+ .elite-refresh .nav{width:calc(100% - 38px);gap:12px}
+ .elite-refresh .brand img{width:56px;height:66px}
+ .elite-refresh .brand span{font-size:17px}
+ .elite-refresh .nav-links{gap:10px;margin-left:12px;font-size:13px}
+ .elite-refresh .nav-links .nav-cta{font-size:12px;padding:10px 12px}
+}
+/* New Jobs landing page, intentionally without invented job postings. */
+.elite-jobs-page{background:#fff}
+.elite-jobs-hero{background:linear-gradient(123deg,#101b50,#1b2e71);color:#fff;padding:82px 0 89px}
+.elite-jobs-container{width:min(1080px,calc(100% - 44px));margin:0 auto}
+.elite-jobs-hero .eyebrow{color:#f3d77f}
+.elite-jobs-hero h1{font-family:"Playfair Display",Georgia,serif;color:#fff;font-size:clamp(33px,3.65vw,47px);font-weight:650;line-height:1.18;letter-spacing:-.025em;max-width:720px;margin:15px 0 20px}
+.elite-jobs-hero p:not(.eyebrow){font-size:15px;line-height:1.8;color:#e1e7f5;max-width:670px;margin:0 0 25px}
+.elite-jobs-content{padding:75px 0 90px}
+.elite-jobs-status{padding:35px 38px;border-top:4px solid #d4af37;border-radius:6px;background:#f7f7fa;max-width:720px}
+.elite-jobs-status h2{font-size:clamp(23px,2.5vw,31px);margin:0 0 15px;color:#111a42}
+.elite-jobs-status p{font-size:14px;line-height:1.85;color:#576276;margin:0}
+.elite-jobs-note{font-size:13px;color:#606a7a;margin-top:22px;max-width:720px;line-height:1.85}
+.elite-jobs-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.elite-jobs-actions .btn{min-width:150px}
+@media(max-width:620px){
+ .elite-jobs-hero{padding:56px 0 62px}
+ .elite-jobs-content{padding:52px 0 70px}
+ .elite-jobs-status{padding:29px 24px}
+}
