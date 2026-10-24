@@ -212,3 +212,39 @@ body.elite-classic-about{background:#fff;color:#26324d}
  .elite-classic-about .elite-classic-people-feature .elite-classic-professional-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
  .elite-classic-about .elite-classic-people-feature .elite-classic-professional-photo{aspect-ratio:4/4.5}
 }
+
+/* Compact, fixed-size gallery: four portraits per row on every screen, two rows total.
+   Replaces the previous mobile two-column setting that made portraits enormous. */
+.elite-classic-about .elite-classic-what-grid{display:block}
+.elite-classic-about .elite-classic-what-panel{width:100%}
+.elite-classic-about .elite-classic-check-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 38px}
+.elite-classic-about .elite-classic-gallery-strip{background:#f8f7f4;padding:47px 0 57px}
+.elite-classic-about .elite-classic-gallery-strip .elite-classic-container{max-width:1120px}
+.elite-classic-about .elite-classic-gallery-lead{text-align:center;margin-bottom:24px}
+.elite-classic-about .elite-classic-gallery-lead h2{font-family:"Inter",Arial,sans-serif;font-weight:800;letter-spacing:-.025em;color:#121a3c;font-size:clamp(22px,2.8vw,33px);margin:0}
+.elite-classic-about .elite-classic-gallery-strip .elite-classic-professional-grid{
+ display:grid!important;
+ grid-template-columns:repeat(4,minmax(0,1fr))!important;
+ gap:clamp(5px,.85vw,11px)!important;
+ width:100%;max-width:950px;margin:0 auto;
+}
+.elite-classic-about .elite-classic-gallery-strip .elite-classic-professional-photo{
+ display:block;min-width:0;min-height:0;
+ aspect-ratio:1/1.04!important;
+ border-radius:6px;overflow:hidden;
+}
+.elite-classic-about .elite-classic-gallery-strip .elite-classic-professional-photo img{
+ display:block;width:100%!important;height:100%!important;
+ object-fit:cover!important;object-position:center 22%;
+}
+.elite-classic-about .elite-classic-gallery-strip .elite-classic-photo-caption{margin:16px auto 0;text-align:center;max-width:780px}
+@media(max-width:760px){
+ .elite-classic-about .elite-classic-check-list{grid-template-columns:1fr}
+ .elite-classic-about .elite-classic-gallery-strip{padding:35px 0 40px}
+ .elite-classic-about .elite-classic-gallery-strip .elite-classic-container{width:calc(100% - 20px)}
+ .elite-classic-about .elite-classic-gallery-strip .elite-classic-professional-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:5px!important;
+ }
+ .elite-classic-about .elite-classic-gallery-lead h2{font-size:23px}
+ .elite-classic-about .elite-classic-gallery-strip .elite-classic-professional-photo{aspect-ratio:1/1.04!important;border-radius:4px}
+}
