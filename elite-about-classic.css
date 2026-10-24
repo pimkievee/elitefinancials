@@ -147,3 +147,37 @@ body.elite-classic-about{background:#fff;color:#26324d}
 @media(prefers-reduced-motion:reduce){
  .elite-classic-about *{scroll-behavior:auto}
 }
+
+/* Refined, timeless navy & ivory treatment. */
+.elite-classic-about .elite-classic-hero{
+  background-image:linear-gradient(125deg,rgba(9,16,43,.86),rgba(9,20,55,.73)),url('/assets/profile.png');
+  background-color:#0d154f;
+}
+.elite-classic-about .elite-classic-hero .elite-classic-overline:after{
+  content:"";display:block;width:43px;height:2px;margin:20px auto 0;background:#d4af37;
+}
+.elite-classic-about .elite-classic-panel{
+  border-color:#e9e6df;border-top:3px solid #d4af37;box-shadow:0 18px 48px rgba(15,22,49,.08);
+}
+.elite-classic-about .elite-classic-numbers{background:linear-gradient(135deg,#0e1741,#1a237e);color:#fff;position:relative;overflow:hidden}
+.elite-classic-about .elite-classic-numbers::before{content:"";position:absolute;width:360px;height:360px;border:1px solid rgba(212,175,55,.14);border-radius:50%;top:-190px;right:-115px;box-shadow:0 0 0 65px rgba(212,175,55,.025),0 0 0 130px rgba(212,175,55,.022);pointer-events:none}
+.elite-classic-about .elite-classic-numbers .elite-classic-container{position:relative}
+.elite-classic-about .elite-classic-numbers h2{color:#fff}
+.elite-classic-about .elite-classic-numbers .elite-classic-kicker{color:#f2d675!important}
+.elite-classic-about .elite-classic-numbers-intro{color:#d9dfef}
+.elite-classic-about .elite-classic-metric{border-top:1px solid rgba(255,255,255,.22);padding:28px 9px 15px;min-width:0}
+.elite-classic-about .elite-classic-metric strong{font-size:clamp(38px,5vw,63px);color:#f2d675}
+.elite-classic-about .elite-classic-metric .is-pending{font-size:clamp(13px,1.6vw,18px);letter-spacing:0;line-height:1.25;min-height:58px;display:flex;align-items:center;justify-content:center;font-weight:600;color:#f5e3b6}
+.elite-classic-about .elite-classic-metric span{color:#f8f8fc}
+.elite-classic-about .elite-classic-testimonials{background:#fff;border-top:1px solid #ececf1}
+.elite-classic-about .elite-classic-visual-break{background-image:linear-gradient(120deg,rgba(8,13,37,.89),rgba(18,32,83,.81)),url('/assets/profile.png')}
+.elite-classic-about .elite-classic-service{border-bottom-color:#dedbd4}
+.elite-classic-about .elite-classic-service>span{color:#e7e4df}
+.elite-classic-about .elite-classic-accordion{border-radius:5px}
+@media(max-width:760px){
+  .elite-classic-about .elite-classic-metric-grid{grid-template-columns:1fr;gap:7px}
+  .elite-classic-about .elite-classic-metric{flex-direction:row;gap:16px;justify-content:space-between;text-align:left;padding:18px 7px}
+  .elite-classic-about .elite-classic-metric strong{min-width:130px;text-align:left}
+  .elite-classic-about .elite-classic-metric .is-pending{min-width:130px;justify-content:flex-start;min-height:0;font-size:13px}
+  .elite-classic-about .elite-classic-metric span{font-size:14px;text-align:right}
+}

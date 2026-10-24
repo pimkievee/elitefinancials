@@ -68,8 +68,11 @@ if ("IntersectionObserver" in window) {
     const greeting=document.createElement('div');
     greeting.className='elite-contact-nudge';
     greeting.setAttribute('aria-label','Contact invitation');
-    greeting.innerHTML='<img src="/assets/elite-financials-logo.jpg" width="37" height="37" alt="" class="elite-nudge-logo"><button type="button" class="elite-nudge-message" aria-label="Open contact options"><strong>Hi there! Have a question?</strong><span>Get in touch with us.</span></button><button type="button" class="elite-nudge-dismiss" aria-label="Dismiss contact invitation">×</button>';
+    greeting.innerHTML='<img src="https://images.unsplash.com/photo-1769636930016-5d9f0ca653aa?auto=format&amp;fit=crop&amp;w=160&amp;h=160&amp;q=85" width="42" height="42" alt="" class="elite-nudge-logo" referrerpolicy="no-referrer"><button type="button" class="elite-nudge-message" aria-label="Open contact options"><strong>Hi there! Have a question?</strong><span>Get in touch with us.</span></button><button type="button" class="elite-nudge-dismiss" aria-label="Dismiss contact invitation">×</button>';
     widget.insertBefore(greeting,open);
+    const avatar=greeting.querySelector('.elite-nudge-logo');
+    if(avatar)avatar.addEventListener('error',()=>{avatar.style.display='none';});
+
 
     const dismissGreeting=()=>{greeting.classList.add('is-dismissed');greeting.setAttribute('aria-hidden','true');greeting.querySelectorAll('button').forEach(el=>el.setAttribute('tabindex','-1'));};
     greeting.querySelector('.elite-nudge-message').addEventListener('click',()=>{
