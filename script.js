@@ -82,3 +82,17 @@ if ("IntersectionObserver" in window) {
     document.addEventListener('pointerdown',e=>{if(!widget.contains(e.target)&&panel.classList.contains('is-open'))toggle(false)});
   });
 })();
+
+/* Count-up animation for verified About page metrics only. Empty data-count values remain unpublished. */
+(function(){
+ const stats=[...document.querySelectorAll('.elite-classic-counter[data-count]')].filter(el=>el.dataset.count.trim()!=='' && Number.isFinite(Number(el.dataset.count)) && Number(el.dataset.count)>=0);
+ if(!stats.length)return;
+ const reduced=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const animate=(el)=>{if(el.dataset.animated==='true')return;el.dataset.animated='true';const target=Number(el.dataset.count),suffix=el.dataset.suffix||'',format=x=>Math.round(x).toLocaleString('en-CA')+suffix;
+ if(reduced||!('requestAnimationFrame' in window)){el.textContent=format(target);return;}
+ const duration=1350,start=performance.now();
+ const frame=(time)=>{const t=Math.min(1,(time-start)/duration),progress=1-Math.pow(1-t,3);el.textContent=format(target*progress);if(t<1)requestAnimationFrame(frame);};
+ el.textContent='0';requestAnimationFrame(frame);
+ };
+ if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){animate(entry.target);observer.unobserve(entry.target);}})},{threshold:.45});stats.forEach(el=>observer.observe(el));}else stats.forEach(animate);
+})();

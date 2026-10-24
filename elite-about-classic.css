@@ -1,0 +1,149 @@
+
+/* ELITE GLOBAL PARTNERS — CLASSIC ABOUT US
+   Editorial photographic hero, overlapping content panels, refined sections.
+   This deliberately retains Elite's navy and gold rather than copying the reference palette. */
+body.elite-classic-about{background:#fff;color:#26324d}
+.elite-classic-about .site-header{
+  position:absolute;top:0;left:0;right:0;z-index:110;
+  background:linear-gradient(180deg,rgba(7,15,45,.58),rgba(7,15,45,.08));
+  border:0;box-shadow:none;backdrop-filter:none
+}
+.elite-classic-about .site-header .brand,
+.elite-classic-about .site-header .nav-links{color:#fff}
+.elite-classic-about .site-header .nav-links a:not(.nav-cta){color:#f5f5fa}
+.elite-classic-about .site-header .nav-links a:hover{color:#f2d675}
+.elite-classic-about .site-header .nav-cta{background:#d4af37;color:#0d154f}
+.elite-classic-about .site-header .nav-cta:hover{background:#f2d675;color:#0d154f}
+.elite-classic-container{width:min(1120px,calc(100% - 44px));margin-inline:auto}
+.elite-classic-hero{
+  position:relative;min-height:620px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(115deg,rgba(8,12,34,.82),rgba(16,28,73,.8)),url('/assets/profile.png') center 32% /cover no-repeat;
+  color:#fff;text-align:center;padding:156px 22px 175px;
+}
+.elite-classic-hero:before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(8,12,34,.16),transparent 45%,rgba(10,16,37,.24))
+}
+.elite-classic-hero-inner{position:relative;max-width:860px;margin:auto}
+.elite-classic-hero .elite-classic-overline{font-size:11px;font-weight:800;letter-spacing:.21em;color:#f0d48c;margin:0 0 24px}
+.elite-classic-about .elite-classic-hero h1{
+  font-family:"Inter",Arial,sans-serif;font-size:clamp(35px,4.3vw,57px);font-weight:800;
+  color:#fff;letter-spacing:-.04em;line-height:1.14;margin:0 auto 35px;max-width:830px
+}
+.elite-classic-hero h2{font-family:"Inter",Arial,sans-serif;color:#fff;font-size:clamp(19px,2.5vw,27px);font-weight:750;line-height:1.3;margin:0 0 18px}
+.elite-classic-hero p:not(.elite-classic-overline){max-width:695px;margin:0 auto;font-size:clamp(14px,1.55vw,17px);line-height:1.85;color:#f5f5fc}
+.elite-classic-warm{background:linear-gradient(180deg,#f7f5f2 0%,#faf9f7 70%,#fff 100%)}
+.elite-classic-intro{position:relative;margin-top:-115px;z-index:3}
+.elite-classic-panels{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}
+.elite-classic-panel{padding:48px 45px 50px;background:#fff;box-shadow:0 21px 60px rgba(14,23,55,.085);border:1px solid #efefed}
+.elite-classic-rule{display:block;width:61px;height:5px;background:#d4af37;margin-bottom:26px}
+.elite-classic-kicker{font-size:10px!important;font-weight:800;letter-spacing:.16em;color:#a8873b!important;text-transform:uppercase;line-height:1.6;margin:0 0 12px!important}
+.elite-classic-about .elite-classic-panel h2,.elite-classic-about .elite-classic-why h2{
+  font-family:"Inter",Arial,sans-serif;font-size:clamp(25px,2.8vw,33px);font-weight:800;
+  color:#111a38;letter-spacing:-.035em;line-height:1.2;margin:0 0 21px
+}
+.elite-classic-panel p:not(.elite-classic-kicker){font-size:15px;line-height:1.9;color:#505867;margin:0 0 18px}
+.elite-classic-panel p:last-child{margin-bottom:0}
+.elite-classic-what{padding:30px 0 92px}
+.elite-classic-what-grid{display:grid;grid-template-columns:1fr .85fr;gap:26px;align-items:stretch}
+.elite-classic-what-panel{padding:46px 45px}
+.elite-classic-check-list{list-style:none;margin:22px 0 30px;padding:0;display:grid;gap:15px}
+.elite-classic-check-list li{position:relative;padding-left:27px;font-size:15px;color:#434b5a;line-height:1.6}
+.elite-classic-check-list li:before{content:"";position:absolute;left:2px;top:9px;width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:7px solid #c2a153}
+.elite-classic-inline-link{display:inline-flex;align-items:center;gap:10px;border-bottom:2px solid #d4af37;padding:5px 0;font-size:13px;font-weight:800;color:#18266b;transition:color .2s}
+.elite-classic-inline-link:hover{color:#9a761a}
+.elite-classic-photo{overflow:hidden;border:1px solid #e8e7e5;background:#172046}
+.elite-classic-photo img{width:100%;height:100%;min-height:425px;object-fit:cover;object-position:center top}
+.elite-classic-services{padding:86px 0 95px;background:linear-gradient(170deg,#f7f5f2,#fff)}
+.elite-classic-centered-heading{text-align:center;max-width:650px;margin:0 auto 52px}
+.elite-classic-about .elite-classic-centered-heading h2,
+.elite-classic-about .elite-classic-numbers h2,
+.elite-classic-about .elite-classic-testimonials h2,
+.elite-classic-about .elite-classic-final h2{color:#101a38;font-family:"Inter",Arial,sans-serif;font-size:clamp(30px,3.3vw,42px);font-weight:800;letter-spacing:-.035em;line-height:1.2;margin:0 0 17px}
+.elite-classic-centered-heading p:not(.elite-classic-kicker){font-size:15px;color:#606777;line-height:1.8;margin:0}
+.elite-classic-service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 65px}
+.elite-classic-service{padding:35px 20px 32px 0;position:relative;min-height:185px;border-bottom:1px solid #e0e0df;isolation:isolate}
+.elite-classic-service>span{position:absolute;top:1px;left:0;font-size:clamp(85px,8vw,125px);font-weight:900;line-height:1;color:#e7e8e9;z-index:-1;letter-spacing:-.07em}
+.elite-classic-service h3{font-family:"Inter",Arial,sans-serif;margin:44px 0 14px;font-size:clamp(18px,1.65vw,21px);color:#101a38;font-weight:800}
+.elite-classic-service p{font-size:14px;line-height:1.8;color:#586273;max-width:490px;margin:0}
+.elite-classic-center-link{text-align:center;margin-top:43px}
+.elite-classic-button{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;min-height:48px;border-radius:4px;background:#1a237e;color:#fff;font-size:13px;font-weight:800;margin:5px 6px;transition:background .2s,transform .2s}
+.elite-classic-button:hover{background:#303d98;color:#fff;transform:translateY(-2px)}
+.elite-classic-visual-break{background:linear-gradient(120deg,rgba(8,13,37,.95),rgba(18,32,83,.88)),url('/assets/profile.png') center 38%/cover;min-height:290px;color:#fff;display:flex;align-items:center}
+.elite-classic-visual-break .elite-classic-container{padding:68px 0}
+.elite-classic-visual-break span{display:block;color:#e4c477;font-weight:800;letter-spacing:.18em;font-size:11px;text-transform:uppercase;margin-bottom:16px}
+.elite-classic-visual-break strong{display:block;max-width:720px;font-size:clamp(27px,4vw,44px);line-height:1.24;font-family:"Playfair Display",Georgia,serif;color:#fff}
+.elite-classic-why{padding:95px 0}
+.elite-classic-why-header{max-width:680px;margin-bottom:33px}
+.elite-classic-why-header>p:not(.elite-classic-kicker){font-size:15px;line-height:1.85;color:#606677;margin:0}
+.elite-classic-accordion{background:#fff;border:1px solid #e7e7e5;box-shadow:0 15px 45px rgba(17,28,67,.055);padding:10px 35px}
+.elite-classic-accordion details{border-bottom:1px solid #e5e6e7}
+.elite-classic-accordion details:last-child{border-bottom:0}
+.elite-classic-accordion summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:25px;padding:20px 0;font-size:16px;font-weight:750;color:#151f40}
+.elite-classic-accordion summary::-webkit-details-marker{display:none}
+.elite-classic-accordion summary:after{content:"+";font-size:24px;line-height:1;color:#18255d;font-weight:600}
+.elite-classic-accordion details[open] summary{color:#9b762c}
+.elite-classic-accordion details[open] summary:after{content:"−";color:#9b762c}
+.elite-classic-accordion details p{font-size:14px;line-height:1.9;color:#586275;padding:0 38px 23px 0;margin:0;max-width:850px}
+.elite-classic-accordion summary:focus-visible{outline:3px solid rgba(212,175,55,.5);outline-offset:3px}
+.elite-classic-numbers{padding:90px 0;background:#f6f4f0}
+.elite-classic-numbers .elite-classic-container{text-align:center}
+.elite-classic-numbers-intro{color:#616a7a;font-size:14px;line-height:1.7;margin:0 auto 42px;max-width:650px}
+.elite-classic-metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.elite-classic-metric{display:flex;flex-direction:column;gap:9px;align-items:center;padding:14px 4px}
+.elite-classic-metric strong{font-size:clamp(39px,5vw,69px);line-height:1.1;font-weight:550;letter-spacing:-.05em;color:#ad862f;font-variant-numeric:tabular-nums}
+.elite-classic-metric span{font-size:15px;color:#1d2746;font-weight:750}
+.elite-classic-testimonials{text-align:center;padding:87px 0 82px;background:#fff}
+.elite-classic-testimonials .elite-classic-container{max-width:770px}
+.elite-classic-testimonials p:not(.elite-classic-kicker){font-size:16px;line-height:1.85;color:#586171;margin:0 auto 25px}
+.elite-classic-final{background:#0d154f;color:#fff;text-align:center;padding:80px 0 85px}
+.elite-classic-final .elite-classic-container{max-width:780px}
+.elite-classic-about .elite-classic-final h2{color:#fff}
+.elite-classic-final p:not(.elite-classic-kicker){font-size:15px;color:#e0e5f4;line-height:1.85;margin:0 0 22px}
+.elite-classic-final .elite-classic-button{background:#d4af37;color:#0d154f;border:1px solid #d4af37}
+.elite-classic-final .elite-classic-button-outline{background:transparent;color:#fff;border-color:#aab0d4}
+.elite-classic-final .elite-classic-button:hover{background:#f2d675;color:#0d154f}
+@media(max-width:1020px){
+ .elite-classic-about .site-header .nav-links{background:#fff;color:#1a237e}
+ .elite-classic-about .site-header .nav-links a:not(.nav-cta){color:#1a237e}
+ .elite-classic-panels{gap:15px}
+ .elite-classic-panel{padding:35px 31px}
+ .elite-classic-what-grid{gap:15px}
+ .elite-classic-service-grid{column-gap:35px}
+}
+@media(max-width:760px){
+ .elite-classic-container{width:calc(100% - 32px)}
+ .elite-classic-about .site-header{position:absolute;top:0}
+ .elite-classic-hero{min-height:660px;padding:175px 22px 190px;background-position:center 25%}
+ .elite-classic-hero h1{margin-bottom:24px}
+ .elite-classic-hero h2{font-size:21px}
+ .elite-classic-panels,.elite-classic-what-grid,.elite-classic-service-grid{grid-template-columns:1fr}
+ .elite-classic-intro{margin-top:-100px}
+ .elite-classic-panel{padding:32px 28px 35px}
+ .elite-classic-what{padding:18px 0 54px}
+ .elite-classic-photo{max-height:400px}
+ .elite-classic-photo img{min-height:340px;max-height:400px}
+ .elite-classic-services{padding:66px 0}
+ .elite-classic-centered-heading{margin-bottom:20px}
+ .elite-classic-service-grid{gap:0}
+ .elite-classic-service{min-height:175px;padding-top:22px}
+ .elite-classic-service h3{margin-top:50px}
+ .elite-classic-visual-break{min-height:235px}
+ .elite-classic-why{padding:64px 0}
+ .elite-classic-accordion{padding:6px 22px}
+ .elite-classic-numbers{padding:66px 0}
+ .elite-classic-metric-grid{gap:11px}
+ .elite-classic-metric strong{font-size:38px}
+ .elite-classic-metric span{font-size:12px;line-height:1.4}
+ .elite-classic-testimonials{padding:64px 0}
+ .elite-classic-final{padding:64px 0 70px}
+}
+@media(max-width:380px){
+ .elite-classic-hero{padding-top:160px}
+ .elite-classic-hero h1{font-size:32px}
+ .elite-classic-metric strong{font-size:32px}
+ .elite-classic-accordion summary{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){
+ .elite-classic-about *{scroll-behavior:auto}
+}
