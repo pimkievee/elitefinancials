@@ -181,3 +181,16 @@ body.elite-classic-about{background:#fff;color:#26324d}
   .elite-classic-about .elite-classic-metric .is-pending{min-width:130px;justify-content:flex-start;min-height:0;font-size:13px}
   .elite-classic-about .elite-classic-metric span{font-size:14px;text-align:right}
 }
+
+/* Diverse illustrative professional portrait gallery — team photos remain unchanged */
+.elite-classic-professional-gallery{padding:82px 0 86px;background:#fff}
+.elite-classic-gallery-heading{max-width:690px;margin:0 auto 31px;text-align:center}
+.elite-classic-gallery-heading h2{font-family:"Inter",Arial,sans-serif;font-size:clamp(29px,3vw,41px);font-weight:800;letter-spacing:-.03em;line-height:1.2;color:#131b3d;margin:0 0 14px}
+.elite-classic-gallery-heading p:not(.elite-classic-kicker){color:#626e80;font-size:14px;line-height:1.8}
+.elite-classic-professional-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.elite-classic-professional-photo{overflow:hidden;border-radius:7px;aspect-ratio:4/4.7;background:#eef0f6;box-shadow:0 10px 25px rgba(17,27,58,.06)}
+.elite-classic-professional-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 25%;transition:transform .4s}
+.elite-classic-professional-photo:hover img{transform:scale(1.035)}
+.elite-classic-photo-caption{text-align:center;color:#7a8190;font-size:11px;line-height:1.5;margin:22px auto 0;max-width:730px}
+.elite-classic-about .elite-classic-metric small{display:block;font-size:11px;line-height:1.45;color:#dce1f0;font-weight:500;text-align:center}
+@media(max-width:760px){.elite-classic-professional-gallery{padding:56px 0 62px}.elite-classic-professional-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.elite-classic-about .elite-classic-metric small{font-size:10px}}
