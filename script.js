@@ -45,3 +45,26 @@ if ("IntersectionObserver" in window) {
 } else {
   revealTargets.forEach((target) => target.classList.add("in-view"));
 }
+
+/* Animated sections across every Elit Global Partners page. */
+(function(){
+  const reduceMotion=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduceMotion){
+    const targets=[...document.querySelectorAll('main section, .elite-feature-card, .elite-service-tile, .elite-step-grid article, .mp-card, .mp-section, .elite-footer')];
+    targets.forEach((el,i)=>{el.setAttribute('data-elite-reveal','');if(el.classList.contains('elite-feature-card')||el.classList.contains('elite-service-tile'))el.style.setProperty('--elite-delay',((i%3)*70)+'ms');});
+    if('IntersectionObserver' in window){
+      const reveal=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('elite-visible');reveal.unobserve(e.target)}})},{threshold:.06,rootMargin:'0px 0px -18px 0px'});
+      targets.forEach(e=>reveal.observe(e));
+    } else targets.forEach(e=>e.classList.add('elite-visible'));
+  }
+  document.querySelectorAll('[data-contact-widget]').forEach(widget=>{
+    const open=widget.querySelector('[data-contact-open]'),close=widget.querySelector('[data-contact-close]'),panel=widget.querySelector('.elite-contact-panel');
+    if(!open||!close||!panel)return;
+    const toggle=(isOpen)=>{panel.classList.toggle('is-open',isOpen);panel.setAttribute('aria-hidden',String(!isOpen));open.setAttribute('aria-expanded',String(isOpen));open.setAttribute('aria-label',isOpen?'Close contact options':'Open contact options');panel.querySelectorAll('a,button').forEach(el=>{if(!isOpen)el.setAttribute('tabindex','-1');else el.removeAttribute('tabindex')});};
+    toggle(false);
+    open.addEventListener('click',()=>toggle(!panel.classList.contains('is-open')));
+    close.addEventListener('click',()=>{toggle(false);open.focus()});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.classList.contains('is-open')){toggle(false);open.focus()}});
+    document.addEventListener('pointerdown',e=>{if(!widget.contains(e.target)&&panel.classList.contains('is-open'))toggle(false)});
+  });
+})();
