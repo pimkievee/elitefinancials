@@ -62,7 +62,21 @@ if ("IntersectionObserver" in window) {
     if(!open||!close||!panel)return;
     const toggle=(isOpen)=>{panel.classList.toggle('is-open',isOpen);panel.setAttribute('aria-hidden',String(!isOpen));open.setAttribute('aria-expanded',String(isOpen));open.setAttribute('aria-label',isOpen?'Close contact options':'Open contact options');panel.querySelectorAll('a,button').forEach(el=>{if(!isOpen)el.setAttribute('tabindex','-1');else el.removeAttribute('tabindex')});};
     toggle(false);
-    open.addEventListener('click',()=>toggle(!panel.classList.contains('is-open')));
+
+    // Auto-sliding greeting, inspired by a chat invitation. The site doesn't
+    // promise live chat: it opens the real existing contact options.
+    const greeting=document.createElement('div');
+    greeting.className='elite-contact-nudge';
+    greeting.setAttribute('aria-label','Contact invitation');
+    greeting.innerHTML='<img src="/assets/elite-financials-logo.jpg" width="37" height="37" alt="" class="elite-nudge-logo"><button type="button" class="elite-nudge-message" aria-label="Open contact options"><strong>Hi there! Have a question?</strong><span>Get in touch with us.</span></button><button type="button" class="elite-nudge-dismiss" aria-label="Dismiss contact invitation">×</button>';
+    widget.insertBefore(greeting,open);
+
+    const dismissGreeting=()=>{greeting.classList.add('is-dismissed');greeting.setAttribute('aria-hidden','true');greeting.querySelectorAll('button').forEach(el=>el.setAttribute('tabindex','-1'));};
+    greeting.querySelector('.elite-nudge-message').addEventListener('click',()=>{
+      dismissGreeting();toggle(true);panel.querySelector('.elite-contact-close').focus();
+    });
+    greeting.querySelector('.elite-nudge-dismiss').addEventListener('click',(e)=>{e.stopPropagation();dismissGreeting();});
+    open.addEventListener('click',()=>{dismissGreeting();toggle(!panel.classList.contains('is-open'));});
     close.addEventListener('click',()=>{toggle(false);open.focus()});
     document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.classList.contains('is-open')){toggle(false);open.focus()}});
     document.addEventListener('pointerdown',e=>{if(!widget.contains(e.target)&&panel.classList.contains('is-open'))toggle(false)});

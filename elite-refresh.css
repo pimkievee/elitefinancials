@@ -111,3 +111,46 @@
 .elite-footer-social{display:flex;align-items:center;justify-content:center;gap:12px;margin:21px 0 0}.elite-footer-social a{width:33px;height:33px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(255,255,255,.25);color:#fff;transition:background .2s,border-color .2s}.elite-footer-social a:hover{background:#d4af37;color:#0d154f;border-color:#d4af37}.elite-footer-social svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.elite-footer-social a:nth-child(2) svg,.elite-footer-social a:nth-child(3) svg{fill:currentColor;stroke:none}
 
 .elite-service-icon{display:inline-flex;width:48px;height:48px;align-items:center;justify-content:center;border-radius:7px;background:#fff9e7;color:#a17a21;margin-bottom:17px}.elite-service-icon svg{width:25px;height:25px}.elite-service-tile .elite-service-count{margin-bottom:12px}.elite-feature-card .elite-feature-number{margin-bottom:12px}
+
+/* Automatic chat-style contact greeting — slide in from the right on arrival. */
+.elite-contact-nudge{
+ position:absolute;right:0;bottom:75px;
+ width:min(290px,calc(100vw - 34px));min-height:72px;
+ display:flex;align-items:center;gap:10px;
+ padding:12px 31px 12px 13px;
+ border-radius:12px;border:1px solid #e3e6ee;
+ background:#fff;color:#243047;
+ box-shadow:0 14px 42px rgba(13,21,79,.18);
+ animation:elite-nudge-enter .65s .3s cubic-bezier(.2,.8,.2,1) both;
+ will-change:transform,opacity;
+}
+.elite-contact-nudge:after{
+ content:"";position:absolute;right:22px;bottom:-7px;
+ height:13px;width:13px;background:#fff;
+ border-right:1px solid #e3e6ee;border-bottom:1px solid #e3e6ee;
+ transform:rotate(45deg);
+}
+.elite-contact-nudge.is-dismissed{display:none}
+.elite-nudge-logo{width:37px;height:37px;flex:none;object-fit:contain;border-radius:50%;background:#f4f5f9}
+.elite-nudge-message{
+ appearance:none;display:flex;flex:1;flex-direction:column;align-items:flex-start;
+ gap:4px;border:0;padding:3px 0;background:none;cursor:pointer;text-align:left;
+ font-family:"Inter",Arial,sans-serif;color:#26324d;
+}
+.elite-nudge-message strong{font-size:12px;font-weight:800;line-height:1.4;color:#151e4f}
+.elite-nudge-message span{font-size:12px;line-height:1.4;color:#566277}
+.elite-nudge-message:hover span{text-decoration:underline}
+.elite-nudge-dismiss{position:absolute;top:6px;right:8px;width:20px;height:20px;
+ padding:0;border:0;background:transparent;color:#70798b;cursor:pointer;
+ font-size:18px;line-height:20px;text-align:center}
+.elite-nudge-dismiss:hover{color:#15215c}
+@keyframes elite-nudge-enter{
+ from{opacity:0;transform:translate3d(85px,12px,0) scale(.96)}
+ to{opacity:1;transform:translate3d(0,0,0) scale(1)}
+}
+@media(max-width:750px){
+ .elite-contact-nudge{right:0;bottom:76px;width:min(280px,calc(100vw - 28px))}
+}
+@media(prefers-reduced-motion:reduce){
+ .elite-contact-nudge{animation:none}
+}
