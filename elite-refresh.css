@@ -154,3 +154,56 @@
 @media(prefers-reduced-motion:reduce){
  .elite-contact-nudge{animation:none}
 }
+
+/* About Us page: compact editorial layout and consistent visual hierarchy. */
+.elite-refresh .elite-about-page{overflow:hidden;background:#fff}
+.elite-refresh .elite-about-masthead{position:relative;padding:68px 22px 72px;background:linear-gradient(120deg,#0d154f 0%,#1a237e 100%);color:#fff;text-align:center;overflow:hidden}
+.elite-refresh .elite-about-masthead::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 82% 10%,rgba(212,175,55,.17),transparent 37%);pointer-events:none}
+.elite-refresh .elite-about-masthead-inner{max-width:740px;margin:0 auto;position:relative}
+.elite-refresh .elite-about-masthead .eyebrow{font-size:11px;color:#f2d675;margin:0 0 13px}
+.elite-refresh .elite-about-masthead h1{font-size:clamp(32px,3.2vw,43px);line-height:1.18;margin:0 0 13px;color:#fff}
+.elite-refresh .elite-about-masthead p:not(.eyebrow){font-size:clamp(14px,1.35vw,16px);font-weight:400;line-height:1.75;color:#ecedfa;max-width:555px;margin:0 auto}
+.elite-refresh .elite-about-story{padding-top:83px;padding-bottom:83px}
+.elite-refresh .elite-about-story-grid{display:grid;grid-template-columns:1.07fr .93fr;align-items:center;gap:clamp(35px,6vw,88px)}
+.elite-refresh .elite-about-story-copy h2{font-size:clamp(28px,2.9vw,39px);max-width:510px;margin:0 0 22px}
+.elite-refresh .elite-about-story-copy p:not(.eyebrow){font-size:15px;line-height:1.85;color:#5d687a;margin:0 0 18px}
+.elite-refresh .elite-about-story-photo{max-width:420px;width:100%;justify-self:end;overflow:hidden;border-radius:6px;border:1px solid #e8e9ef;box-shadow:0 17px 35px rgba(13,21,79,.09)}
+.elite-refresh .elite-about-story-photo img{display:block;width:100%;aspect-ratio:4/4.35;height:auto;object-fit:cover;object-position:center 22%}
+.elite-refresh .elite-about-inline-link{display:inline-flex;align-items:center;gap:11px;margin-top:8px;padding:9px 0;border-bottom:2px solid #d4af37;color:#1a237e;font-size:13px;font-weight:800}
+.elite-refresh .elite-about-inline-link:hover{color:#9f7a0e}
+.elite-refresh .elite-about-mission{background:#f7f8fc;border-top:1px solid #e7eaf0;border-bottom:1px solid #e7eaf0}
+.elite-refresh .elite-about-mission-inner{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(34px,7vw,110px);align-items:start;padding-top:74px;padding-bottom:75px}
+.elite-refresh .elite-about-mission h2{font-size:clamp(27px,3vw,39px);margin:0;max-width:390px}
+.elite-refresh .elite-about-mission-copy{padding-left:32px;border-left:2px solid #d4af37}
+.elite-refresh .elite-about-mission-copy p{font-size:15px;line-height:1.87;color:#5d687a;margin:0 0 17px}
+.elite-refresh .elite-about-mission-copy p:last-child{margin-bottom:0}
+.elite-refresh .elite-about-focus{padding-top:82px;padding-bottom:86px}
+.elite-refresh .elite-about-section-heading{max-width:670px;margin:0 0 32px}
+.elite-refresh .elite-about-section-heading h2{font-size:clamp(28px,3vw,39px);margin:0 0 14px}
+.elite-refresh .elite-about-section-heading p:not(.eyebrow){font-size:15px;line-height:1.8;color:#647084}
+.elite-refresh .elite-about-focus-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.elite-refresh .elite-about-focus-card{display:flex;flex-direction:column;align-items:flex-start;min-height:275px;background:#fff;padding:28px 26px;border:1px solid #e5e7ef;border-radius:6px;box-shadow:0 6px 20px rgba(13,21,79,.035);transition:border-color .2s,transform .2s,box-shadow .2s}
+.elite-refresh .elite-about-focus-card:hover{transform:translateY(-3px);border-color:rgba(212,175,55,.6);box-shadow:0 15px 34px rgba(13,21,79,.08)}
+.elite-refresh .elite-about-card-index{color:#a17a27;font-size:12px;font-weight:900;letter-spacing:.14em;margin-bottom:24px}
+.elite-refresh .elite-about-focus-card h3{font-size:18px;line-height:1.35;color:#0d154f;margin:0 0 10px}
+.elite-refresh .elite-about-focus-card p{font-size:13px;line-height:1.75;color:#5d687a;margin:0 0 20px}
+.elite-refresh .elite-about-focus-card a{margin-top:auto;font-size:12px;font-weight:800;color:#1a237e}
+.elite-refresh .elite-about-focus-card a:hover{color:#9f7a0e}
+.elite-refresh .elite-about-cta h2{font-size:clamp(28px,3.2vw,41px)}
+@media(max-width:820px){
+ .elite-refresh .elite-about-story-grid,.elite-refresh .elite-about-mission-inner{grid-template-columns:1fr;gap:25px}
+ .elite-refresh .elite-about-story-photo{justify-self:start;max-width:420px}
+ .elite-refresh .elite-about-mission-copy{padding-left:22px}
+ .elite-refresh .elite-about-focus-grid{grid-template-columns:1fr;gap:13px}
+ .elite-refresh .elite-about-focus-card{min-height:0}
+}
+@media(max-width:580px){
+ .elite-refresh .elite-about-masthead{padding:49px 18px 52px}
+ .elite-refresh .elite-about-masthead h1{font-size:33px}
+ .elite-refresh .elite-about-masthead p:not(.eyebrow){font-size:13px}
+ .elite-refresh .elite-about-story{padding-top:54px;padding-bottom:58px}
+ .elite-refresh .elite-about-story-copy h2,.elite-refresh .elite-about-mission h2{font-size:29px}
+ .elite-refresh .elite-about-story-copy p:not(.eyebrow),.elite-refresh .elite-about-mission-copy p{font-size:14px}
+ .elite-refresh .elite-about-mission-inner,.elite-refresh .elite-about-focus{padding-top:58px;padding-bottom:58px}
+ .elite-refresh .elite-about-focus-card{padding:25px}
+}
