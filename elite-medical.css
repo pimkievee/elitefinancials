@@ -125,3 +125,95 @@
  .elite-medical-refined .elite-med-quote-actions .elite-med-btn{font-size:11px}
 }
 @media(prefers-reduced-motion:reduce){.elite-medical-refined *{scroll-behavior:auto!important;transition:none!important}}
+
+/* Approved compact medical professionals layout, October 2026.
+   Hero is intentionally text-only; one diverse team image appears beside financial services. */
+.elite-medical-refined .elite-med-approved-hero{
+  position:relative;isolation:isolate;overflow:hidden;
+  background:radial-gradient(ellipse at 88% 6%,#253462 0%,#121d4c 53%,#0d1537 100%);
+  padding:78px 0 77px;border-bottom:0;
+}
+.elite-medical-refined .elite-med-approved-hero::before{
+  content:"";pointer-events:none;position:absolute;z-index:-1;
+  width:610px;height:610px;border:1px solid rgba(212,175,55,.13);
+  border-radius:50%;top:-320px;right:-55px;box-shadow:0 0 0 85px rgba(255,255,255,.025),0 0 0 160px rgba(255,255,255,.014)
+}
+.elite-medical-refined .elite-med-approved-hero::after{
+  content:"EGP";pointer-events:none;position:absolute;right:5%;bottom:-85px;
+  font-family:"Playfair Display",Georgia,serif;font-size:clamp(125px,15vw,225px);
+  letter-spacing:-.08em;line-height:1;color:rgba(255,255,255,.038)
+}
+.elite-medical-refined .elite-med-approved-hero .elite-med-hero-grid{display:block}
+.elite-medical-refined .elite-med-approved-hero .elite-med-hero-copy{max-width:750px}
+.elite-medical-refined .elite-med-approved-hero .elite-med-overline{color:#ebce81}
+.elite-medical-refined .elite-med-approved-hero h1{
+  max-width:690px;font-size:clamp(34px,3.6vw,49px);
+  color:#fff;line-height:1.15;margin:0 0 20px
+}
+.elite-medical-refined .elite-med-gold-rule{display:block;width:55px;height:3px;background:#d4af37;margin:22px 0 19px}
+.elite-medical-refined .elite-med-approved-hero .elite-med-hero-copy>p:not(.elite-med-overline){
+  color:#e4e9f4;max-width:650px;font-size:14px;line-height:1.85
+}
+.elite-medical-refined .elite-med-approved-hero .elite-med-hero-copy .elite-med-hero-detail{font-size:12px!important;color:#ccd5eb}
+.elite-medical-refined .elite-med-approved-hero .elite-med-btn,
+.elite-medical-refined .elite-med-quote .elite-med-btn,
+.elite-medical-refined .elite-med-final .elite-med-btn{
+  background:#d4af37;border-color:#d4af37;color:#101943
+}
+.elite-medical-refined .elite-med-approved-hero .elite-med-outline,
+.elite-medical-refined .elite-med-quote .elite-med-outline,
+.elite-medical-refined .elite-med-final .elite-med-outline{
+  background:transparent;color:#fff;border-color:#a9b4d3
+}
+.elite-medical-refined .elite-med-approved-hero .elite-med-btn:hover,
+.elite-medical-refined .elite-med-quote .elite-med-btn:hover,
+.elite-medical-refined .elite-med-final .elite-med-btn:hover{
+  background:#efd077;color:#101943
+}
+.elite-medical-refined .elite-med-jump .elite-med-wrap{justify-content:center}
+.elite-medical-refined .elite-med-section{padding:67px 0}
+.elite-medical-refined .elite-med-main h2{font-size:clamp(25px,2.7vw,34px)}
+.elite-medical-refined .elite-med-detail-grid article{padding:22px;min-height:133px}
+.elite-medical-refined .elite-med-financial-grid{grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:39px;align-items:center}
+.elite-medical-refined .elite-med-support-photo{background:#e8eaf0;border-radius:5px;overflow:hidden}
+.elite-medical-refined .elite-med-support-photo img{
+  display:block;object-fit:cover;object-position:center;
+  width:100%;height:100%;aspect-ratio:4/3;max-height:365px
+}
+.elite-medical-refined .elite-med-approved-accounting>.elite-med-wrap{display:block}
+.elite-medical-refined .elite-med-approved-accounting .elite-med-intro{max-width:610px;margin-bottom:24px}
+.elite-medical-refined .elite-med-approved-accounting .elite-med-accounting-list{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:13px;border:0
+}
+.elite-medical-refined .elite-med-approved-accounting .elite-med-accounting-list article{
+  display:block;border:0;border-top:2px solid #d4af37;
+  background:#f8f8f8;padding:21px 20px;min-height:125px
+}
+.elite-medical-refined .elite-med-approved-accounting .elite-med-accounting-list article>span{display:none}
+.elite-medical-refined .elite-med-approved-accounting .elite-med-accounting-list h3{font-size:15px}
+.elite-medical-refined .elite-med-approved-accounting .elite-med-textlink{margin-top:20px}
+.elite-medical-refined .elite-med-business{background:#fff}
+.elite-medical-refined .elite-med-business-panel{
+  max-width:930px;padding:34px 37px;border-left:3px solid #d4af37;
+  background:#f7f5f1;margin:0 auto
+}
+.elite-medical-refined .elite-med-business-panel p:not(.elite-med-kicker){max-width:710px}
+.elite-medical-refined .elite-med-approved-proof{padding:36px 0}
+.elite-medical-refined .elite-med-approved-proof h2{font-size:clamp(23px,2.4vw,30px)}
+.elite-medical-refined .elite-med-approved-proof p{font-size:12px}
+.elite-medical-refined .elite-med-start{background:#f7f5f1}
+.elite-medical-refined .elite-med-paths a{border-radius:0}
+.elite-medical-refined .elite-med-final{padding:61px 0}
+@media(max-width:750px){
+ .elite-medical-refined .elite-med-approved-hero{padding:51px 0 56px}
+ .elite-medical-refined .elite-med-approved-hero h1{font-size:clamp(30px,7.7vw,38px)}
+ .elite-medical-refined .elite-med-approved-hero .elite-med-hero-copy>p:not(.elite-med-overline){font-size:13px}
+ .elite-medical-refined .elite-med-jump .elite-med-wrap{justify-content:flex-start}
+ .elite-medical-refined .elite-med-section{padding:53px 0}
+ .elite-medical-refined .elite-med-financial-grid{grid-template-columns:1fr;gap:24px}
+ .elite-medical-refined .elite-med-support-photo img{max-height:270px;aspect-ratio:16/10}
+ .elite-medical-refined .elite-med-approved-accounting .elite-med-accounting-list{grid-template-columns:1fr;gap:10px}
+ .elite-medical-refined .elite-med-approved-accounting .elite-med-accounting-list article{min-height:0;padding:18px}
+ .elite-medical-refined .elite-med-business-panel{padding:26px 23px}
+}
