@@ -194,3 +194,21 @@ body.elite-classic-about{background:#fff;color:#26324d}
 .elite-classic-photo-caption{text-align:center;color:#7a8190;font-size:11px;line-height:1.5;margin:22px auto 0;max-width:730px}
 .elite-classic-about .elite-classic-metric small{display:block;font-size:11px;line-height:1.45;color:#dce1f0;font-weight:500;text-align:center}
 @media(max-width:760px){.elite-classic-professional-gallery{padding:56px 0 62px}.elite-classic-professional-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.elite-classic-about .elite-classic-metric small{font-size:10px}}
+
+/* Keep the original couple portrait only in the top hero. */
+.elite-classic-about .elite-classic-visual-break{
+ background:linear-gradient(120deg,#0b1232,#172863)!important;
+}
+.elite-classic-about .elite-classic-what-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:24px;align-items:center}
+.elite-classic-about .elite-classic-people-feature{min-width:0;padding:0}
+.elite-classic-about .elite-classic-people-feature .elite-classic-professional-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+.elite-classic-about .elite-classic-people-feature .elite-classic-professional-photo{aspect-ratio:3/4.3;border-radius:5px;box-shadow:none}
+.elite-classic-about .elite-classic-people-feature .elite-classic-photo-caption{margin:14px 0 0;text-align:left;max-width:none;font-size:10px}
+@media(max-width:900px){
+ .elite-classic-about .elite-classic-what-grid{grid-template-columns:1fr}
+ .elite-classic-about .elite-classic-people-feature .elite-classic-professional-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media(max-width:480px){
+ .elite-classic-about .elite-classic-people-feature .elite-classic-professional-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .elite-classic-about .elite-classic-people-feature .elite-classic-professional-photo{aspect-ratio:4/4.5}
+}
