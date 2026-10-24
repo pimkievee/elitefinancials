@@ -211,3 +211,35 @@
 /* Human contact avatar replaces the corporate logo; original branding is unchanged elsewhere. */
 .elite-contact-nudge .elite-nudge-logo{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center;flex-shrink:0;border:2px solid #f2e3bb}
 .elite-contact-nudge{min-height:83px;padding:13px 31px 13px 12px}
+
+/* Consistent editorial type scale across standard Elite pages.
+   About Us retains its approved classic theme; Medical page has its own sheet. */
+.elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) .hero h1,
+.elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) .elite-service-hero h1,
+.elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) .quote-hero h1,
+.elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) .guidance-info h1,
+.elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) main.page>section.section>h1,
+.elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) .section.narrow>h1{
+  font-size:clamp(30px,3.4vw,46px);
+  line-height:1.23;
+  letter-spacing:-.025em;
+}
+.elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) .elite-intro-strip h2,
+.elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) .elite-split-content h2,
+.elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) .section-header h2,
+.elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) .elite-services-heading h2{
+  font-size:clamp(25px,2.65vw,35px);
+  line-height:1.28;
+}
+.elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) .section{
+  padding-top:clamp(48px,5.5vw,70px);padding-bottom:clamp(48px,5.5vw,70px);
+}
+@media(max-width:750px){
+  .elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) .hero h1,
+  .elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) .elite-service-hero h1,
+  .elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) .quote-hero h1,
+  .elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) .guidance-info h1,
+  .elite-refresh:not(.elite-classic-about):not(.elite-medical-refined) .section.narrow>h1{
+    font-size:clamp(29px,7vw,39px);
+  }
+}
