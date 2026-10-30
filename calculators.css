@@ -1,0 +1,107 @@
+
+/* ELIT GLOBAL PARTNERS / FINANCIAL CALCULATORS
+   Navy and gold; responsive scroll-snap carousel, no external dependencies. */
+.fc-page{background:#fff;color:#16223c;overflow-x:hidden}
+.fc-page .fc-wrap{width:min(1150px,calc(100% - 44px));margin-inline:auto}
+.fc-page .fc-hero{padding:75px 0 83px;background:radial-gradient(ellipse at 85% 8%,#293870 0%,#141f51 52%,#0d1542 100%);color:#fff}
+.fc-page .fc-kicker,.fc-page .fc-overline{font-size:10px;letter-spacing:.17em;font-weight:850;text-transform:uppercase;line-height:1.5;color:#af8940;margin:0 0 17px}
+.fc-page .fc-hero .fc-kicker{color:#f2d477}
+.fc-page .fc-hero h1{font-family:"Playfair Display",Georgia,serif;font-weight:600;font-size:clamp(32px,4vw,48px);line-height:1.18;letter-spacing:-.03em;max-width:700px;color:#fff;margin:0 0 18px}
+.fc-page .fc-hero p:not(.fc-kicker){font-size:15px;line-height:1.8;color:#e2e8f4;max-width:690px;margin:0}
+.fc-page .fc-hero-rule{height:3px;width:53px;background:#d4af37;margin-top:27px}
+.fc-page .fc-tools{padding:65px 0 75px;background:#f8f8f7}
+.fc-page .fc-tools-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:24px}
+.fc-page .fc-tools-heading h2{font-family:"Playfair Display",Georgia,serif;color:#121d48;font-size:clamp(24px,2.55vw,34px);font-weight:650;letter-spacing:-.025em;line-height:1.25;margin:0}
+.fc-page .fc-tools-heading>p{font-size:13px;line-height:1.65;color:#6c7584;max-width:270px;margin:0}
+.fc-page .fc-tab-shell{position:relative;overflow-x:auto;scrollbar-width:thin;margin-bottom:16px;-webkit-overflow-scrolling:touch}
+.fc-page .fc-tabs{display:flex;gap:8px;min-width:max-content;padding-bottom:8px}
+.fc-page .fc-tab{display:inline-flex;gap:7px;align-items:center;border:1px solid #dfe2e9;border-radius:5px;background:#fff;color:#4d596e;font:inherit;font-weight:750;font-size:12px;padding:13px 16px;white-space:nowrap;cursor:pointer;transition:background .18s,color .18s,border-color .18s}
+.fc-page .fc-tab span{font-size:16px;color:#b38e3d;line-height:1}
+.fc-page .fc-tab:hover{border-color:#c2ad74;color:#101a46}
+.fc-page .fc-tab.is-selected{background:#141f56;color:#fff;border-color:#141f56}
+.fc-page .fc-tab.is-selected span{color:#f4d882}
+.fc-page .fc-carousel{overflow:hidden;border:1px solid #e3e5ec;border-radius:8px;background:#fff;box-shadow:0 19px 44px rgba(16,27,69,.045)}
+.fc-page .fc-track{display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-x:contain;touch-action:pan-x pan-y}
+.fc-page .fc-track::-webkit-scrollbar{display:none}
+.fc-page .fc-track:focus-visible{outline:3px solid #d4af37;outline-offset:-3px}
+.fc-page .fc-slide{box-sizing:border-box;flex:0 0 100%;min-width:0;scroll-snap-align:start;scroll-snap-stop:always;background:#fff;padding:35px 37px 38px}
+.fc-page .fc-slide-head{display:flex;align-items:start;gap:17px;padding-bottom:25px;border-bottom:1px solid #e9eaf0}
+.fc-page .fc-index{font-size:11px;letter-spacing:.12em;color:#ab8638;font-weight:850;flex:none;white-space:nowrap;padding-top:8px}
+.fc-page .fc-slide-head h2{color:#111b42;font-size:clamp(23px,2.4vw,30px);font-family:"Playfair Display",Georgia,serif;font-weight:650;line-height:1.25;margin:0 0 7px}
+.fc-page .fc-slide-head p{color:#687387;font-size:13px;line-height:1.6;max-width:680px;margin:0}
+.fc-page .fc-slide-body{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(270px,.8fr);gap:30px;align-items:start;padding-top:26px}
+.fc-page .fc-form{min-width:0}
+.fc-page .fc-input-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 15px}
+.fc-page .fc-field{display:flex;flex-direction:column;gap:7px;min-width:0}
+.fc-page .fc-field>span:first-child{color:#39465b;font-size:12px;font-weight:750;line-height:1.4}
+.fc-page .fc-input-wrap{display:block;position:relative}
+.fc-page .fc-field input{box-sizing:border-box;width:100%;height:46px;min-width:0;border-radius:5px;border:1px solid #d7dce5;padding:10px 12px;background:#fff;color:#121d43;font-family:"Inter",system-ui,sans-serif;font-size:15px;font-weight:600;outline:none;font-variant-numeric:tabular-nums;transition:border-color .18s,box-shadow .18s}
+.fc-page .fc-field input:focus{border-color:#b2924f;box-shadow:0 0 0 3px rgba(212,175,55,.17)}
+.fc-page .fc-field input:invalid{border-color:#bd6c65}
+.fc-page .fc-summary{box-sizing:border-box;min-width:0;border-radius:6px;background:linear-gradient(143deg,#101a4a,#1b286d);padding:28px 25px 24px;min-height:290px;color:#fff;position:relative;overflow:hidden}
+.fc-page .fc-summary:before{content:"";display:block;width:155px;height:155px;border:1px solid rgba(212,175,55,.14);border-radius:50%;position:absolute;right:-45px;top:-64px;box-shadow:0 0 0 45px rgba(255,255,255,.024);pointer-events:none}
+.fc-page .fc-summary-eyebrow{display:block;position:relative;font-size:10px;font-weight:850;text-transform:uppercase;letter-spacing:.15em;color:#f0d884;margin:0 0 15px;line-height:1.5}
+.fc-page .fc-main-value{display:block;position:relative;font-size:clamp(27px,3vw,42px);font-weight:850;line-height:1.15;letter-spacing:-.045em;overflow-wrap:anywhere;color:#fff;font-variant-numeric:tabular-nums}
+.fc-page .fc-main-sub{position:relative;font-size:12px;line-height:1.65;color:#d5ddf0;margin:9px 0 22px}
+.fc-page .fc-result-lines{border-top:1px solid rgba(255,255,255,.2);padding-top:15px;margin-top:10px}
+.fc-page .fc-result-line{display:flex;gap:14px;justify-content:space-between;align-items:baseline;padding:6px 0;font-size:12px;line-height:1.55}
+.fc-page .fc-result-line span{color:#d7dded}
+.fc-page .fc-result-line b{font-weight:800;color:#f5dfa4;text-align:right;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.fc-page .fc-note{font-size:11px!important;line-height:1.65!important;color:#cbd2e6!important;margin:19px 0 0!important}
+.fc-page .fc-error{color:#9a3636;background:#fff5f4;border-left:3px solid #cb6868;border-radius:3px;padding:12px 14px;font-size:12px;line-height:1.55;margin:14px 0 0}
+.fc-page .fc-error[hidden]{display:none}
+.fc-page .fc-controls{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:18px}
+.fc-page .fc-position{display:flex;align-items:center;gap:16px}
+.fc-page #fc-position{font-size:11px;font-weight:850;color:#5c6879;letter-spacing:.1em;font-variant-numeric:tabular-nums}
+.fc-page .fc-dots{display:flex;align-items:center;gap:6px}
+.fc-page .fc-dots span{width:6px;height:6px;display:block;background:#cbd0d9;border-radius:4px;transition:width .2s,background .2s}
+.fc-page .fc-dots span.is-active{background:#b48c33;width:21px}
+.fc-page .fc-arrows{display:flex;align-items:center;gap:8px}
+.fc-page .fc-arrow{width:42px;height:42px;border:1px solid #cfd4e0;border-radius:50%;display:grid;place-items:center;cursor:pointer;color:#1b275e;background:#fff;font-size:20px;transition:background .2s}
+.fc-page .fc-arrow:hover:not(:disabled){background:#18245b;border-color:#18245b;color:#fff}
+.fc-page .fc-arrow:disabled{opacity:.38;cursor:not-allowed}
+.fc-page .fc-disclaimer{margin:20px 0 0!important;color:#737c89;font-size:11px;line-height:1.8;max-width:980px}
+.fc-page .fc-consult{padding:64px 0;background:#fff;border-top:1px solid #eee}
+.fc-page .fc-consult-inner{display:flex;align-items:center;justify-content:space-between;gap:40px}
+.fc-page .fc-consult h2{font-size:clamp(24px,2.8vw,34px);color:#141f4a;font-family:"Playfair Display",Georgia,serif;font-weight:600;margin:0 0 12px}
+.fc-page .fc-consult p:not(.fc-overline){font-size:14px;color:#626d80;line-height:1.75;max-width:500px;margin:0}
+.fc-page .fc-consult-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.fc-page .fc-button{display:inline-flex;align-items:center;justify-content:center;border-radius:4px;min-height:44px;padding:12px 18px;color:#fff;background:#17235b;font-size:12px;font-weight:800;border:1px solid #17235b;white-space:nowrap}
+.fc-page .fc-button:hover{background:#263879;color:#fff}
+.fc-page .fc-button-outline{background:transparent;color:#17235b}
+.fc-page .fc-button-outline:hover{background:#f5f3ee;color:#17235b}
+@media(max-width:900px){
+.fc-page .fc-slide-body{grid-template-columns:minmax(0,1fr)}
+.fc-page .fc-summary{min-height:0}
+.fc-page .fc-consult-inner{display:block}
+.fc-page .fc-consult-actions{margin-top:24px}
+}
+@media(max-width:650px){
+.fc-page .fc-wrap{width:calc(100% - 28px)}
+.fc-page .fc-hero{padding:53px 0 60px}
+.fc-page .fc-hero p:not(.fc-kicker){font-size:13px}
+.fc-page .fc-tools{padding:39px 0 45px}
+.fc-page .fc-tools-heading{display:block;margin-bottom:21px}
+.fc-page .fc-tools-heading>p{margin-top:11px;max-width:400px}
+.fc-page .fc-slide{padding:25px 17px 23px}
+.fc-page .fc-slide-head{gap:9px;padding-bottom:20px}
+.fc-page .fc-index{font-size:9px;padding-top:7px}
+.fc-page .fc-slide-head h2{font-size:25px}
+.fc-page .fc-slide-head p{font-size:12px}
+.fc-page .fc-slide-body{padding-top:20px;gap:21px}
+.fc-page .fc-input-grid{gap:12px 10px}
+.fc-page .fc-field>span:first-child{font-size:11px}
+.fc-page .fc-field input{height:46px;padding:9px 10px;font-size:16px}
+.fc-page .fc-tab{padding:11px 13px;font-size:11px}
+.fc-page .fc-summary{padding:23px 20px}
+.fc-page .fc-main-value{font-size:34px}
+.fc-page .fc-consult{padding:47px 0}
+}
+@media(max-width:365px){
+.fc-page .fc-input-grid{grid-template-columns:1fr}
+.fc-page .fc-slide-head h2{font-size:22px}
+}
+@media(prefers-reduced-motion:reduce){
+.fc-page .fc-track{scroll-behavior:auto}
+.fc-page .fc-tab,.fc-page .fc-arrow,.fc-page .fc-dots span{transition:none}
+}

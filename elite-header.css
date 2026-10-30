@@ -78,3 +78,28 @@
  .elite-jobs-content{padding:52px 0 70px}
  .elite-jobs-status{padding:29px 24px}
 }
+
+
+/* Financial calculators navigation and homepage promo. */
+.elite-refresh .elite-calc-promo{background:#f7f7f4;border-top:1px solid #e9e8e5;border-bottom:1px solid #e9e8e5}
+.elite-refresh .elite-calc-promo-inner{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,6vw,78px);align-items:center}
+.elite-refresh .elite-calc-promo .eyebrow{color:#ac8631;margin-bottom:12px}
+.elite-refresh .elite-calc-promo h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(26px,2.7vw,37px);font-weight:650;color:#111b46;line-height:1.25;margin:0 0 15px;letter-spacing:-.025em}
+.elite-refresh .elite-calc-promo p:not(.eyebrow){max-width:650px;color:#5c677b;font-size:14px;line-height:1.8;margin:0 0 24px}
+.elite-refresh .elite-calc-promo-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.elite-refresh .elite-calc-promo-list span{display:block;background:#fff;border:1px solid #e2e3e8;border-top:3px solid #d4af37;border-radius:4px;padding:16px 17px;font-size:12px;font-weight:800;color:#1d285d}
+.elite-refresh .elite-calc-promo-list span:last-child{grid-column:span 2}
+@media(min-width:1021px) and (max-width:1180px){
+ .elite-refresh .menu-toggle{display:grid;place-items:center;background:#1a237e;color:#fff}
+ .elite-refresh .nav{position:relative}
+ .elite-refresh .nav-links{display:none;position:absolute;left:0;right:0;top:calc(100% + 5px);background:#fff;color:#243044;border:1px solid #e5e7ed;box-shadow:0 16px 30px rgba(12,20,53,.15);padding:20px;flex-direction:column;align-items:stretch;gap:5px;z-index:70;border-radius:6px;margin-left:0;white-space:normal}
+ .elite-refresh .nav-links.open{display:flex}
+ .elite-refresh .nav-links a{display:block;padding:10px}
+ .elite-refresh .nav-links a:not(.nav-cta){color:#1a237e}
+ .elite-refresh .nav-links .nav-cta{text-align:center;color:#fff}
+ .elite-refresh .mobile-header-cta{display:inline-flex;background:#d4af37;color:#0d154f;font-size:11px;padding:10px 13px;min-height:38px;border-radius:5px;box-shadow:none;align-items:center}
+}
+@media(max-width:760px){
+ .elite-refresh .elite-calc-promo-inner{grid-template-columns:1fr;gap:24px}
+ .elite-refresh .elite-calc-promo-list span{padding:14px}
+}
